@@ -37,15 +37,15 @@ func main() {
 
 			exists := false
 
-			if exists {
-				continue
-			}
-
 			for _, v := range d {
 				if v == copied {
 					exists = true
 					break
 				}
+			}
+
+			if exists {
+				continue
 			}
 
 			if current == size-1 {
